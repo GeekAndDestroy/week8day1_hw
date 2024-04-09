@@ -1431,13 +1431,6 @@
         {
             "language": "markdown",
             "source": [
-                ""
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
                 "Create a type to represent the following instances of `CTStudent` Also declare three 3 students below as type `CTStudent` and set their values\n\n```\nlet student1 = {\n    id: 'GMK435&g62L00',\n    name: 'John Smith',\n    age: 24,\n    isTired: true,\n    projectsCompleted:[\"HTML Portfolio\", \"Fakebook\", \"Pokemon API Project\", \"Weather Bug\"],\n    pet: 'dog'\n}\n\nlet student2= {\n    id: '6KGS%54GmlY76',\n    name: 'Jenny Hawthorne',\n    age: 28,\n    isTired: false,\n    projectsCompleted:[\"HTML Portfolio\"],\n}\n\nlet student3 = {\n    id: '6KGS%54GmlY76',\n    name: 'Neo',\n    age: 57,\n    isTired: true,\n    projectsCompleted:[\"Matrix\",\"Biological Interface Program\"],\n    pet:'cat'\n}\n```"
             ],
             "outputs": []
@@ -1445,7 +1438,7 @@
         {
             "language": "typescript",
             "source": [
-                "//Answer\n\n\n\n\n\ntype CTStudent ={\n    id: string;\n    name: string;\n    age: number;\n    isTired: boolean;\n    projectsCompleted: string[];\n    pet?: string\n}\n\nlet student1 = {\n    id: 'GMK435&g62L00',\n    name: 'John Smith',\n    age: 24,\n    isTired: true,\n    projectsCompleted:[\"HTML Portfolio\", \"Fakebook\", \"Pokemon API Project\", \"Weather Bug\"],\n    pet: 'dog'\n}\n\nlet student2= {\n    id: '6KGS%54GmlY76',\n    name: 'Jenny Hawthorne',\n    age: 28,\n    isTired: false,\n    projectsCompleted:[\"HTML Portfolio\"],\n}\n\nlet student3 = {\n    id: '6KGS%54GmlY76',\n    name: 'Neo',\n    age: 57,\n    isTired: true,\n    projectsCompleted:[\"Matrix\",\"Biological Interface Program\"],\n    pet:'cat'\n}\n\n\n\nconsole.log(student1)\nconsole.log(student2)\nconsole.log(student3)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                "//Answer\n\n\n\n\n\ntype CTStudent ={\n    id: string;\n    name: string;\n    age: number;\n    isTired: boolean;\n    projectsCompleted: string[];\n    pet?: string\n}\n\nlet student1:CTStudent  = {\n    id: 'GMK435&g62L00',\n    name: 'John Smith',\n    age: 24,\n    isTired: true,\n    projectsCompleted:[\"HTML Portfolio\", \"Fakebook\", \"Pokemon API Project\", \"Weather Bug\"],\n    pet: 'dog'\n}\n\nlet student2:CTStudent = {\n    id: '6KGS%54GmlY76',\n    name: 'Jenny Hawthorne',\n    age: 28,\n    isTired: false,\n    projectsCompleted:[\"HTML Portfolio\"],\n}\n\nlet student3:CTStudent  = {\n    id: '6KGS%54GmlY76',\n    name: 'Neo',\n    age: 57,\n    isTired: true,\n    projectsCompleted:[\"Matrix\",\"Biological Interface Program\"],\n    pet:'cat'\n}\n\n\n\nconsole.log(student1)\nconsole.log(student2)\nconsole.log(student3)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
             ],
             "outputs": [
                 {
@@ -1473,6 +1466,7 @@
                                 "  isTired: false,",
                                 "  projectsCompleted: [ 'HTML Portfolio' ]",
                                 "}",
+                                "undefined",
                                 "{",
                                 "  id: '6KGS%54GmlY76',",
                                 "  name: 'Neo',",
