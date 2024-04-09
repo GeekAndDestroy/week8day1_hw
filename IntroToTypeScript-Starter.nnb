@@ -1533,7 +1533,7 @@
         {
             "language": "typescript",
             "source": [
-                "//Given \ntype Book={\n    isbn:string,\n    title:string,\n    author:string\n}\n\ntype DigitalBook={\n    fileType:string,\n}\n\n//Answer\n\ntype Ebook = Book|DigitalBook; \n\nconst newBook:Ebook =  {\n    isbn: \"978-0-545-01022-1\",\n    title: \"A Walk Between Two Ferns\",\n    author: \"Zach G\"\n};\n\nconsole.log(newBook)\n\n\n"
+                "//Given \ntype Book={\n    isbn:string,\n    title:string,\n    author:string\n}\n\ntype DigitalBook={\n    fileType:string,\n}\n\n//Answer\n\ntype Ebook = Book & DigitalBook; \n\nconst newBook:Ebook =  {\n    isbn: \"978-0-545-01022-1\",\n    title: \"A Walk Between Two Ferns\",\n    author: \"Zach G\",\n    fileType: \"pdf\"\n};\n\nconsole.log(newBook)\n\n\n"
             ],
             "outputs": [
                 {
@@ -1544,7 +1544,8 @@
                                 "{",
                                 "  isbn: '978-0-545-01022-1',",
                                 "  title: 'A Walk Between Two Ferns',",
-                                "  author: 'Zach G'",
+                                "  author: 'Zach G',",
+                                "  fileType: 'pdf'",
                                 "}",
                                 ""
                             ]
